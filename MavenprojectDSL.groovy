@@ -7,7 +7,7 @@ triggers {
     scm('* * * * *')
 }
 steps {
-    maven('clean package', sampleproject/pom.xml)
+    maven(sampleproject/pom.xml)
 }
 publishers {
     archiveArtifacts '**/*.jar'

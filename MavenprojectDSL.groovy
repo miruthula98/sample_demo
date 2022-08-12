@@ -4,7 +4,7 @@ scm {
     git("git@github.com:miruthula98/sample_demo.git", master)
 }
 triggers {
-    scm(* * * * *)
+    scm('* * * * *')
 }
 steps {
     maven('clean package', sampleproject/pom.xml)
